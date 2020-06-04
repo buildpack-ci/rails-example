@@ -1,4 +1,4 @@
-name: CI
+ame: CI
 on: [push, pull_request]
 jobs:
   test:
@@ -20,6 +20,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - uses: buildpack-ci/buildpack-ci-action@master
+    - uses: buildpack-ci/run-tests@master
       env:
         DATABASE_URL: postgres://postgres:postgres@postgres:5432/test
