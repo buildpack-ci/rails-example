@@ -20,6 +20,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - uses: buildpack-ci/run-tests@master
+    - uses: buildpack-ci/run-tests@v1
       env:
         DATABASE_URL: postgres://postgres:postgres@postgres:5432/test
